@@ -1,0 +1,486 @@
+$jp-font: "Noto Sans JP", sans-serif;
+
+html,
+body {
+  overflow-x: hidden;
+  font-family: "Noto Sans JP", sans-serif;
+  background: url("../image/white-pattern.jpg") repeat;
+}
+
+.inner2 {
+  width: 100%;
+  height: calc(100vh - 4rem);
+  // aspect-ratio: 16/9;
+  background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(223, 223, 223, 0.4)), url("../image/main-bg.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  // padding-top:6rem;
+}
+
+.main {
+  padding: 6vh 0;
+  .sect01 {
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+    // background: red;
+    h1 {
+      color: #ee8d0a;
+    }
+    h3 {
+      font-size: 1.5em;
+    }
+    h4 {
+      span {
+        font-weight: bold;
+        font-size: 1.5em;
+        padding: 0 5px;
+        color: #134577;
+      }
+    }
+  }
+  .sect02 {
+    padding-top: 10vh;
+    .sect02-news {
+      background: rgba(222, 222, 222, 0.8);
+      box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.5);
+      width: 90%;
+      max-width: 880px;
+      min-width: 340px;
+      margin: 0 auto;
+      position: relative;
+      padding: 0 0 4vh;
+      .header {
+        width: 100%;
+        max-width: 280px;
+        height: 64px;
+        margin: 0 auto;
+        text-align: center;
+        position: relative;
+        top: -25px;
+        background: url("../image/blue-triangle-gradient.png") no-repeat;
+        background-size: cover;
+        background-position: center;
+        // padding: 10px;
+        h3 {
+          color: #ec7e06;
+          // font-weight: bold;
+          font-size: 40px;
+          font-family: "Akshar", sans-serif;
+          text-shadow: 1px 3px 6px #fff;
+          // margin-top: -5px;
+        }
+        p {
+          color: #fee618;
+          font-weight: bold;
+          margin-top: -15px;
+        }
+      }
+      .news-articles {
+        width: 100%;
+        max-width: 640px;
+        margin: 0 auto;
+        padding: 20px 10px;
+        border-bottom: 1px solid #9a9a9a;
+        p {
+          font-size: 0.9em;
+          color: red;
+        }
+        h4 {
+          font-size: 1.25em;
+          a {
+            font-weight: bold;
+            text-decoration: none;
+            color: rgb(27, 27, 195);
+          }
+        }
+        .body {
+          h6 {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 1; /* number of lines to show */
+            line-clamp: 1;
+            -webkit-box-orient: vertical;
+          }
+        }
+      }
+    }
+    .sample-video {
+      margin: 8vh auto;
+      padding: 0 0 4vh;
+      width: 90%;
+      max-width: 880px;
+      background: rgba(222, 222, 222, 0.8);
+      box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.5);
+      position: relative;
+      .header {
+        width: 100%;
+        max-width: 280px;
+        height: 64px;
+        margin: 0 auto;
+        text-align: center;
+        position: relative;
+        top: -20px;
+        background: url("../image/blue-triangle-gradient.png") no-repeat;
+        background-size: cover;
+        background-position: center;
+        // padding: 10px;
+        h3 {
+          color: #ec7e06;
+          // font-weight: bold;
+          font-size: 40px;
+          font-family: "Akshar", sans-serif;
+          text-shadow: 1px 3px 6px #fff;
+          // margin-top: -5px;
+        }
+        p {
+          color: #fee618;
+          font-weight: bold;
+          margin-top: -15px;
+        }
+      }
+      .video-landscape {
+        width: 90%;
+        // background: red;
+        margin: 5vh auto;
+        video {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .video-portrait {
+        margin: 0 auto;
+        width: 90%;
+        max-width: 480px;
+        // background: blue;
+        video {
+          width: 100%;
+        }
+      }
+    }
+    .sect02-schedule {
+      width: 90%;
+      max-width: 720px;
+      margin: 0 auto;
+      background: rgba(222, 222, 222, 0.8);
+      box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      position: relative;
+      .header {
+        width: 100%;
+        max-width: 280px;
+        height: 64px;
+        margin: 0 auto;
+        text-align: center;
+        position: relative;
+        top: -45px;
+        background: url("../image/blue-triangle-gradient.png") no-repeat;
+        background-size: cover;
+        background-position: center;
+        // padding: 10px;
+        h3 {
+          color: #ec7e06;
+          // font-weight: bold;
+          font-size: 40px;
+          font-family: "Akshar", sans-serif;
+          text-shadow: 1px 3px 6px #fff;
+          // margin-top: -5px;
+        }
+        p {
+          color: #fee618;
+          font-weight: bold;
+          margin-top: -15px;
+        }
+      }
+      .schedule-item {
+        background: #ffffff;
+        width: 90%;
+        margin: 30px auto;
+        // position: relative;
+        display: flex;
+        align-items: center;
+        padding: 10px 0;
+        box-shadow: 1px 3px 6px rgba(50, 50, 50, 0.6);
+        .data {
+          position: relative;
+          p {
+            margin: 0;
+          }
+        }
+        .arrow {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .item {
+          width: 100%;
+          padding: 20px 0;
+          display: flex;
+          //  align-items: center;
+          .round-area {
+            width: 20%;
+            //  background:blue;
+            float: left;
+            position: relative;
+            display: flex;
+            padding: 20px;
+            align-items: center;
+            .round {
+              position: absolute;
+              left: -10%;
+
+              background: rgb(253, 231, 21);
+              background: linear-gradient(180deg, rgba(253, 231, 21, 1) 0%, rgba(237, 137, 10, 1) 100%);
+              text-align: center;
+              padding: 25px 30px;
+              font-weight: bold;
+              color: #fff;
+              text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+              clip-path: polygon(79% 18%, 100% 51%, 79% 81%, 0 81%, 20% 51%, 0 18%);
+            }
+          }
+
+          .date {
+            width: 80%;
+            float: right;
+            position: relative;
+            display: flex;
+            align-items: center;
+            .date-p {
+              p {
+                margin-bottom: 0;
+                font-weight: bold;
+              }
+            }
+            .arrow {
+              //  width:10%;
+              position: absolute;
+              right: -3%;
+              display: flex;
+              align-items: center;
+              //  background:#c5b9b9;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+footer {
+  background: #1a3764;
+  padding: 3vh 0;
+  color: #fff;
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    // background:pink;
+    text-align: center;
+    li {
+      display: inline-block;
+      font-size: 0.8em;
+      padding-right: 10px;
+      // margin-right: 5px;
+      border-right: 1px solid #fff;
+      &:nth-last-child(1) {
+        border-right: none;
+      }
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+  }
+  h5 {
+    font-size: 1em;
+    text-align: center;
+    margin-top: 10px;
+  }
+  p {
+    text-align: center;
+    a {
+      color: #fff;
+    }
+  }
+}
+
+
+// ARTICLES PAGE
+
+.top {
+  aspect-ratio: 16/5;
+  background:rgb(27, 27, 195);
+  background:linear-gradient(180deg, rgba(255,255,255,0.8) 0%, rgba(222,222,222,0.7) 100%), url(../image/main-bg.png) no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  h2 {
+    font-size: 2em;
+    color:#fff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+
+  }
+}
+
+.main-article {
+  .previous-link {
+    color:#C14A4A;
+    // text-decoration: none;
+    font-size: 0.8em;
+    cursor: pointer;
+  }
+  .articles {
+    background:#EEEBD9;
+    box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.5);
+    h5 {
+      color:#1A3764;
+    }
+    h6 {
+      color:#C14A4A;
+      font-size: 0.9em;
+      i {
+        font-size: 0.9em;
+        padding-right: 10px;  
+      }
+    }
+    p {
+      line-height: 2em;
+      margin:3vh auto;
+    }
+    .prev_and_next {
+      display:flex;
+    display:-webkit-flex;
+    // background:#FFD54F;
+    padding:10px;
+    justify-content:space-between;
+      .left, .right {
+        a {
+          i {
+            font-size:1.5em;
+            color:#9b9b9b;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Schedule
+.schedule-page {
+  a {
+    .round {
+      border-radius: 5px;
+      box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.5);
+      text-align: center;
+      padding:4vh 5vw;
+      margin:2vh auto;
+      font-weight: bold;
+      font-size: 1.5em;
+      color:#000;
+      
+    }
+  }
+  .rd-1 {
+    background:#fff;
+  }
+  .rd-2 {
+    background:#EBEBEB;
+  }
+  .rd-3 {
+    background:#C3C3C3;
+  }
+  .rd-4 {
+    background:#919191;
+  }
+  .arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:3vh 3vw;
+  }
+  .step {
+    background:#EEEBD9;
+    border-radius: 10px;
+    box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.5);
+    padding:2vh 3vw;
+    margin:6vh auto;
+    h3 {
+      color: #EE8D0A;
+      text-decoration: underline;
+    }
+    p {
+      line-height:2em;
+      span {
+        color:#C14A4A;
+        font-size: 0.9em;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  // .inner2 {
+  //   height:100vh;
+  //   background:linear-gradient(rgba(245, 245, 245, 0.4),rgba(255, 255, 255, 0.4)), url('../image/main-bg-phone.png') no-repeat;
+  //   background-size: cover;
+  //   background-position: center;
+
+  // }
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    .sect02 {
+      .sect02-schedule {
+        .schedule-item {
+          .item {
+            .round-area {
+              .round {
+                font-size: 0.9em;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .main {
+    .sect02 {
+      .sect02-schedule {
+        width: 90%;
+        max-width: 500px;
+        padding: 20px 10px;
+        .schedule-item {
+          width: 96%;
+          .outer-round {
+            padding: 0;
+            .round {
+              left: -30%;
+            }
+            .date {
+              padding-right: 0;
+              padding-left: 0;
+            }
+          }
+          .item {
+            .round-area {
+              width: 30%;
+              font-size: 0.8em;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // articles
+  .top {
+    aspect-ratio: 16/9;
+  }
+}
