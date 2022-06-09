@@ -32,31 +32,44 @@
         href="https://fonts.googleapis.com/css2?family=Akshar:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@100;500;700;900&display=swap"
         rel="stylesheet">
 </head>
+<script>
+    $(window).scroll(function () {
+        $('nav').toggleClass('scrolled', $(this).scrollTop() > 500);
+    });
+</script>
 
 <body>
     <div class="wrapper">
-        <nav class="navbar navbar-expand-lg navbar-light bg-kmax">
+        <nav class="navbar navbar-expand-lg navbar-light bg-kmax fixed-top">
             <div class="container-fluid">
-                <a class="navbar-brand" href="/index.html">
-                    <img src="../assets/image/logo.png" height="50" class="d-inline-block align-top mx-3" alt="">
-                    <!-- KAMI-1 グランプリ -->
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
-                    aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                <a class="navbar-brand" href="../index.html"><img src="../assets/image/logo.png" alt="KAMI-1" height="40"></a>
+                <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around"
+                    type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="toggler-icon top-bar"></span>
+                    <span class="toggler-icon middle-bar"></span>
+                    <span class="toggler-icon bottom-bar"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">動画</a>
+                            <a class="nav-link" href="https://kami-1.com/">大会概要</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">スケジュール</a>
+                            <a class="nav-link" href="../schedule/index.html">日程・結果</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">お問い合わせ</a>
+                            <a class="nav-link" href="https://kami-1.com/entry">エントリー</a>
                         </li>
-    
+                        <li class="nav-item">
+                            <a class="nav-link" href="../movies/index.html">動画</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../news/index.html">お知らせ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../contact/index.html">お問い合わせ</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -73,6 +86,7 @@
                 <div class="my-4 col-lg-8 offset-lg-2 col-md-10 offset-md-1">
                     <a onclick="history.back()" class="previous-link"><i class="fa-solid fa-rotate-left"></i> 前に戻る</a>
                     <div class="schedule pt-5 px-3 mt-2 mb-5">
+
                         <a href="#rd1">
                             <div class="col-10 offset-1 round rd-1">
                                 1回戦・1次審査
@@ -123,8 +137,26 @@
                         <h3>決勝戦</h3>
                         <p>
                             タイトル・コンセプト説明を踏まえて、他業界のクリエイター、カミカリスマ美容師の方々を審査員に迎え、事前審査を行います。<br>
-                            決勝戦は、12月13日に開催される<strong>KAMI CHARISMA 2023 AWARD</strong>内にて、進出者の作品を紹介した上で、見事グランプリに輝いた美容師もしくはチームを発表致します。
+                            決勝戦は、12月13日に開催される<strong>KAMI CHARISMA 2023
+                                AWARD</strong>内にて、進出者の作品を紹介した上で、見事グランプリに輝いた美容師もしくはチームを発表致します。
                         </p>
+                    </div>
+                    <div class="mt-3 text-center">
+                        <h2>関連サイトはこちら</h2>
+                    </div>
+                    <div class="row mb-5">
+                        <div class="col-sm-6">
+                            <div class="p-2">
+                                <a href="https://www.kamisma.com"><img src="../assets/image/kamisma.png" alt="KAMISMA" class="img-fluid"></a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="p-2">
+                                <a href="https://www.kami-charisma.com"><img src="../assets/image/kami-charisma.png" alt="KAMISMA" class="img-fluid"></a>
+                            </div>
+                        </div>
+
+
                     </div>
                     <!-- <a class="btn btn-primary" onclick="history.back()">前のページへ戻る</a> -->
                 </div>

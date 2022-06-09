@@ -35,108 +35,24 @@
         href="https://fonts.googleapis.com/css2?family=Akshar:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@100;500;700;900&display=swap"
         rel="stylesheet">
 
-    <!-- <script>
-        $(document).ready(menu);
-
-        function menu() {
-            $('#menu-icon-shape').on('click', function () {
-                $('#menu-icon-shape').toggleClass('active');
-                $('#top, #middle, #bottom').toggleClass('active');
-                $('#overlay-nav').toggleClass('active');
-            });
-        }
-    </script> -->
+    <script>
+        $(window).scroll(function () {
+          $('nav').toggleClass('scrolled', $(this).scrollTop() > 500);
+        });
+      </script>
 
 
 
 
 </head>
 
+
 <body>
 
-    <!-- <div class="custom-nav">
-        <div class="logo">
-            <img src="https://kami1-grandprix-test.netlify.app/assets/images/logo.png" alt="Logo Image">
-        </div>
-        <div class="toggle-custom-nav">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-        </div>
-        <ul class="nav-custom-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">プライバシー・ポリシー</a></li>
-            <li><a href="#">利用規約</a></li>
-            <li><a href="#">お問合せ</a></li>
-            <li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
-        </ul>
-    </div> -->
-    <!-- <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              
-            </ul>
-            
-          </div>
-        </div>
-      </nav> -->
-    <!-- <nav class="navbar fixed-top navbar-expand-sm bg-white">
-        <div class="container">
-          <a href="#" class="navbar-brand">
-              <img src="assets/image/main-bg.png" alt="" height="30">
-          </a>
-          <button class="navbar-toggler" type="button"
-            data-bs-toggle="offcanvas" 
-            data-bs-target="#navbarOffcanvas"
-            aria-controls="navbarOffcanvas"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="offcanvas offcanvas-end bg-white" id="navbarOffcanvas"
-              tabindex="-1" aria-labelledby="offcanvasNavbarLabel">
-              <div class="offcanvas-header">
-                <h5 class="offcanvas-title text-light" id="offcanvasNavbarLabel">KAMI-1 GRAND PRIX</h5>
-                <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-              </div>
-              <div class="offcanvas-body">          
-                <div class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                  <a class="nav-item nav-link text-center" href="index.html">HOME</a>
-                  <a class="nav-item nav-link text-center" href="https://www.espn.com">動画</a>
-                  <a class="nav-item nav-link text-center" href="#">利用規約</a>
-                  <a class="nav-item nav-link text-center" href="#">プライバシー・ポリシー</a>
-                </div>
-              </div>
-          </div>  
-        </div>
-      </nav> -->
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-kmax">
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-kmax fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="/index.html">
                 <img src="../assets/image/logo.png" height="50" class="d-inline-block align-top mx-3" alt="">
-                <!-- KAMI-1 グランプリ -->
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
                 aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -145,7 +61,16 @@
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="movies/index.html">動画</a>
+                        <a class="nav-link" href="schedule/index.html">大会概要</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="schedule/index.html">日程・結果</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://kami-1.com/entry">エントリー</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="movies/index.html">動画</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="schedule/index.html">スケジュール</a>
@@ -157,13 +82,48 @@
                 </ul>
             </div>
         </div>
-    </nav>
-    <div class="inner2">
-        <div class="logo">
-            <div class="logo-area col-8 offset-2">
-                <img src="assets/image/main-logo.png" alt="KAMI-1 カミワン" style="width:100%;">
-            </div>
+    </nav> -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-kmax fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="assets/image/logo.png" alt="KAMI-1" height="40"></a>
+          <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="toggler-icon top-bar"></span>
+            <span class="toggler-icon middle-bar"></span>
+            <span class="toggler-icon bottom-bar"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="https://kami-1.com/">大会概要</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/schedule/index.html">日程・結果</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://kami-1.com/entry">エントリー</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/movies/movies/index.html">動画</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/schedule/index.html">スケジュール</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact/index.html">お問い合わせ</a>
+                </li>
+            </ul>
+          </div>
         </div>
+      </nav>
+    <div class="inner2">
+        
+            <div class="logo-area col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-10 offset-sm-1">
+                <div class="contents">
+                    <img src="assets/image/main-logo.png" alt="KAMI-1 カミワン" class="img-fluid">
+                    <h2 class="text-center">理美容業界初、映像コンテスト始動！</h2>
+                </div>
+            </div>
+        
     </div>
     <div class="main">
         <section class="sect01">
@@ -172,9 +132,10 @@
                 <h3>次代の主役をつかめ！</h3>
                 <h4>優勝賞金<span>200</span>万！</h4>
                 <div class="col-lg-10 offset-lg-1 col-md-10 offset-md-1 col-sm-10 offset-sm-1">
-                    <p class="py-2 px-1" style="line-height: 2em;">「有名になりたい」「認められたい」など向上心を持つ理美容師の夢を叶える業界初のイベント。
-                        個性や強みを魅力的に演出する自己プロデュース力を発揮して頂くために、「動画」をテーマにしたステージをご用意いたしました。
-                        1回戦、2回戦を突破し、見事決勝戦で優勝を手にした参加者にはグランプリ獲得を記念して賞を贈呈致します。</p>
+                    <p class="py-2 px-1" style="line-height: 2em;">
+                        「有名になりたい」「認められたい」など向上心を持つ理美容師の夢を叶える業界初のイベント。2023年度に幕開けするKAMI-1グランプリの前哨戦として、<ruby>KAMI-1<rt>カミワン</rt></ruby>グランプリ
+                        <ruby>ZERO<rt>ゼロ</rt></ruby>を開催します。<br>個性や強みを魅力的に演出する自己プロデュース力を発揮して頂くために、「動画」をテーマにしたステージをご用意しました。1回戦、2回戦を突破し、見事決勝戦で優勝を手にした参加者（個人
+                        または チーム）にはグランプリ獲得を記念して賞を贈呈致します。</p>
                 </div>
             </div>
         </section>
