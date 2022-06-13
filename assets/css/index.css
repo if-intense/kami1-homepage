@@ -5,6 +5,21 @@ body {
   background: url("../image/white-pattern.jpg") repeat;
 }
 
+.tiktok {
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+  padding: 1vh 2vw;
+  z-index: 999;
+  background: rgba(47, 47, 47, 0.8);
+  border-radius: 5px;
+  box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.5);
+}
+.tiktok i {
+  font-size: 2em;
+  color: white;
+}
+
 .contact-form .block {
   margin: 2vh auto;
 }
@@ -415,7 +430,6 @@ footer ul li {
   display: inline-block;
   font-size: 0.8em;
   padding-right: 10px;
-  border-right: 1px solid #fff;
 }
 footer ul li:nth-last-child(1) {
   border-right: none;
